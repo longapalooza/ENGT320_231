@@ -57,7 +57,7 @@ q_conv = h*A_s*(T_s - T_inf)
 # In[8]:
 
 
-q_rad = e*sig*A_s*(T_s.to('K')**4 - T_inf.to('K')**4)
+q_rad = e*sig*A_s*(T_s.to('K')**4 - T_sur.to('K')**4)
 '{:0.3E}'.format(q_rad.to('W'))
 
 
