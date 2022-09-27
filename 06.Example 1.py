@@ -6,6 +6,7 @@
 
 import math
 import matplotlib.pyplot as plt
+import numpy as np
 import pint # https://pint.readthedocs.io
 
 
@@ -90,32 +91,21 @@ round(m_ss.to('1/m'), 2)
 
 
 def Tdist(x, m):
-    T_b_ = T_b.to('K').magnitude
-    T_inf_ = T_inf.to('K').magnitude
-    m_ = m.to_base_units().magnitude
-    x_ = x.to_base_units().magnitude
-    return (T_b_ - T_inf_)*math.e**(-m_*x_) + T_inf_
+    return (T_b.to('K') - T_inf.to('K'))*math.e**(-m*x) + T_inf.to('K')
 
 
 # In[12]:
 
 
-x = list(range(0, 350))*ureg.mm
+x = np.linspace(0, 350)*ureg.mm
 
 
 # In[13]:
 
 
-T_cu = []
-T_al = []
-T_ss = []
-for xval in x:
-    T_cu.append(Tdist(xval, m_cu))
-    T_al.append(Tdist(xval, m_al))
-    T_ss.append(Tdist(xval, m_ss))
-T_cu = T_cu*ureg.K
-T_al = T_al*ureg.K
-T_ss = T_ss*ureg.K
+T_cu = Tdist(x, m_cu)
+T_al = Tdist(x, m_al)
+T_ss = Tdist(x, m_ss)
 
 
 # In[14]:
@@ -123,9 +113,9 @@ T_ss = T_ss*ureg.K
 
 fig, ax = plt.subplots(1, 1)
 
-ax.plot(x.to('mm'), T_cu.to('degC'), label = 'Copper')
-ax.plot(x.to('mm'), T_al.to('degC'), label = 'Aluminum')
-ax.plot(x.to('mm'), T_ss.to('degC'), label = 'Stainless Steel')
+ax.plot(x.to('mm').magnitude, T_cu.to('degC').magnitude, label = 'Copper')
+ax.plot(x.to('mm').magnitude, T_al.to('degC').magnitude, label = 'Aluminum')
+ax.plot(x.to('mm').magnitude, T_ss.to('degC').magnitude, label = 'Stainless Steel')
 
 ax.set_xlabel('Position along fin (mm)')
 ax.set_ylabel('Fin temperature ($^\\circ C$)')
