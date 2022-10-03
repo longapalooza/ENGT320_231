@@ -121,5 +121,5 @@ var para = {
     class_27_assignment: '<a href="homework/Homework 15 Problem Statement.html" target="_blank">Homework 15</a> due M 11.14 at 8 AM<br><a href="https://forms.gle/GmQcTarNXkiL4KVVA" target="_blank">Submit Here</a>',
     class_28_assignment: 'No Assignment',
     class_29_assignment: 'No Assignment',
-    class_30_assignment: 'No Assignment',
+    class_30_assignment: 'No Assignment'
 }
