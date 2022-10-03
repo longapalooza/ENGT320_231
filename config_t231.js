@@ -31,7 +31,7 @@ var para = {
     class_27_date: '11/9/2022',
     class_28_date: '11/11/2022',
     class_29_date: '11/14/2022',
-    class_30_date: '11/16/2022'
+    class_30_date: '11/16/2022',
     class_1_week: '1',
     class_2_week: '2',
     class_3_week: '2',
