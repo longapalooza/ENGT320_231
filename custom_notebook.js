@@ -8,6 +8,7 @@ if (urlParams.has('term')){
         script.src = config_src;
         document.head.append(script);
         window.onload = update;
+        update();
     }
 }
 
