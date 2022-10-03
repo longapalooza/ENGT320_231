@@ -96,7 +96,6 @@ function update(){
     
     // Change dates to short format (month/day)
     var es = [... document.querySelectorAll('v.short')];
-    console.log(es);
     if (es.length > 0){
         es.forEach(e => {
             if (isDate(e.innerHTML)){
