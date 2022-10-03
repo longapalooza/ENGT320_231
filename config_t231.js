@@ -114,7 +114,7 @@ var para = {
     class_28_topic: 'No Lab',
     class_29_topic: 'Content Quiz 5<br><a href="Quiz 5 Formula Sheet.pdf" target="_blank">Quiz 5 Formula Sheet</a>',
     class_30_topic: 'No Class',
-    class_1_assignment: '<a href="homework/Homework 1 Problem Statement.html" target="_blank">Homework 1</a> (Bonus) due <v k="homework_1_due_date" class="day_abbr short_dot"></v> at 8 AM<br><a href="https://forms.gle/hSET5jfitBHnLGAq9" target="_blank">Submit Here</a>',
+    class_1_assignment: '<a href="homework/Homework 1 Problem Statement.html" target="_blank">Homework 1</a> (Bonus) due <v k="homework_1_due_date" class="day_abbr short_dot">?homework_1_due_date?</v> at 8 AM<br><a href="https://forms.gle/hSET5jfitBHnLGAq9" target="_blank">Submit Here</a>',
     class_2_assignment: '<a href="homework/Homework 2 Problem Statement.html" target="_blank">Homework 2</a> due F 9.16 at 8 AM<br><a href="https://forms.gle/47j5Tqgf4hUw43iA9" target="_blank">Submit Here</a>',
     class_3_assignment: '<a href="homework/Homework 3 Problem Statement.html" target="_blank">Homework 3</a> due M 9.19 at 8 AM<br><a href="https://forms.gle/SvRuPYaV2KySALuz6" target="_blank">Submit Here</a>',
     class_4_assignment: 'Memo 1 due F 9.23 at 8 AM<br><a href="https://forms.gle/ZvpMMVp7mbAvBU1F7" target="_blank">Submit Here</a>',
