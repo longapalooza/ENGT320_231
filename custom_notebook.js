@@ -75,7 +75,7 @@ function update(){
         });
     }
     
-    // Change dates to long do format (month.day.year)
+    // Change dates to long dot format (month.day.year)
     var es = [... document.querySelectorAll('v.long_dot')];
     if (es.length > 0){
         es.forEach(e => {
@@ -104,4 +104,6 @@ function update(){
             }
         });
     }
+    
+    // TODO: Add quarter modification classes - wlong
 }
