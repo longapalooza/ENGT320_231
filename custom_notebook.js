@@ -29,6 +29,7 @@ function update(){
         keys.push(key);
         }
     }
+    keys.reverse();
     
     // Add para values by key to all v tags
     keys.forEach(key => {
