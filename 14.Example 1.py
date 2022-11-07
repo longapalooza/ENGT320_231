@@ -50,9 +50,9 @@ print(lamT_2)
 
 
 lamT_a = Q_(3000, 'um*K')
-lamT_b = Q_(3500, 'um*K')
-F_a = 0.273229
-F_b = 0.382909
+lamT_b = Q_(3400, 'um*K')
+F_a = 0.273232
+F_b = 0.361735
 F_0lam1 = ((lamT_1 - lamT_a)/(lamT_b - lamT_a))*(F_b - F_a) + F_a
 print(F_0lam1)
 
@@ -60,7 +60,7 @@ print(F_0lam1)
 # In[8]:
 
 
-F_0lam2 = 0.856251
+F_0lam2 = 0.856288
 
 
 # In[9]:
